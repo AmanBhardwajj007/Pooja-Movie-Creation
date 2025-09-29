@@ -18,7 +18,7 @@ const Slider = () => {
   return (
     <div className="relative w-full overflow-hidden shadow-lg">
       <div
-        className="flex transition-transform duration-700 ease-in-out"
+        className="flex min-w-full transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {sliderImg.map((img, index) => (

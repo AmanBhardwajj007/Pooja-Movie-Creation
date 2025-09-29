@@ -17,8 +17,9 @@ const Slider = () => {
 
   return (
     <div className="relative w-full overflow-hidden shadow-lg">
+      {/* Slider Track */}
       <div
-        className="flex transition-transform duration-700 ease-in-out h-full"
+        className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {sliderImg.map((img, index) => (
@@ -26,23 +27,33 @@ const Slider = () => {
             key={index}
             src={img}
             alt={`Slide ${index + 1}`}
-            className="w-full flex-shrink-0 object-cover h-[250px] sm:h-[300px] md:h-[380px] lg:h-[440px] xl:h-[500px] 2xl:h-[530px]"
+            className="
+              w-full flex-shrink-0 object-cover
+              h-[220px]    /* xs */
+              sm:h-[250px] /* ≥640px */
+              md:h-[250px] /* ≥768px */
+              lg:h-[310px] /* ≥1024px */
+              xl:h-[430px] /* ≥1280px */
+              2xl:h-[500px] /* ≥1536px */
+            "
           />
         ))}
       </div>
 
+      {/* Prev Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-[32px] -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white 
-        p-2 sm:p-2.5 md:p-3 rounded-full cursor-pointer"
+        className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-[32px] -translate-y-1/2 
+        bg-black/40 hover:bg-black/70 text-white p-2 sm:p-2.5 md:p-3 rounded-full cursor-pointer"
       >
         <i className="ri-arrow-left-wide-fill text-base sm:text-lg md:text-xl"></i>
       </button>
 
+      {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 sm:right-6 md:right-8 lg:right-[20px] -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white 
-        p-2 sm:p-2.5 md:p-3 rounded-full cursor-pointer"
+        className="absolute top-1/2 right-4 sm:right-6 md:right-8 lg:right-[20px] -translate-y-1/2 
+        bg-black/40 hover:bg-black/70 text-white p-2 sm:p-2.5 md:p-3 rounded-full cursor-pointer"
       >
         <i className="ri-arrow-right-wide-line text-base sm:text-lg md:text-xl"></i>
       </button>

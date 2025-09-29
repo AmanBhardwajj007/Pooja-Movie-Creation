@@ -29,18 +29,17 @@ const Slider = () => {
             alt={`Slide ${index + 1}`}
             className="
               w-full flex-shrink-0 object-cover
-              h-[220px]    /* xs */
-              sm:h-[250px] /* ≥640px */
-              md:h-[250px] /* ≥768px */
-              lg:h-[310px] /* ≥1024px */
-              xl:h-[430px] /* ≥1280px */
-              2xl:h-[500px] /* ≥1536px */
+              h-[220px] 
+              sm:h-[250px]
+              md:h-[250px] 
+              lg:h-[310px]
+              xl:h-[430px] 
+              2xl:h-[500px] 
             "
           />
         ))}
       </div>
 
-      {/* Prev Button */}
       <button
         onClick={prevSlide}
         className="absolute top-1/2 left-4 sm:left-6 md:left-8 lg:left-[32px] -translate-y-1/2 
@@ -49,7 +48,6 @@ const Slider = () => {
         <i className="ri-arrow-left-wide-fill text-base sm:text-lg md:text-xl"></i>
       </button>
 
-      {/* Next Button */}
       <button
         onClick={nextSlide}
         className="absolute top-1/2 right-4 sm:right-6 md:right-8 lg:right-[20px] -translate-y-1/2 

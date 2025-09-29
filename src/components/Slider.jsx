@@ -26,7 +26,7 @@ const Slider = () => {
             key={index}
             src={img}
             alt={`Slide ${index + 1}`}
-            className="w-screen flex-shrink-0 object-contain h-[250px] sm:h-[300px] md:h-[380px] lg:h-[430px]"
+            className="w-full flex-shrink-0 object-cover h-[250px] sm:h-[300px] md:h-[380px] lg:h-[430px]"
           />
         ))}
       </div>

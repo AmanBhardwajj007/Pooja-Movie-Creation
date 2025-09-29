@@ -1,5 +1,4 @@
 import React from "react";
-import vid1 from "../video/ShowReel.mp4";
 
 const ShowReel = () => {
   return (
@@ -13,7 +12,7 @@ const ShowReel = () => {
 
       <div className="w-full sm:w-[95%] h-[60vh] sm:h-[70vh] md:h-[85vh] lg:h-[95vh] border border-[#e4d00a] p-[7px] rounded-lg">
         <video
-          src={vid1}
+          src='/showReel.mp4'
           loop
           muted
           playsInline

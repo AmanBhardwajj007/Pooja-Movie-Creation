@@ -63,9 +63,6 @@ const ImageCard = ({ src }) => (
 
 const Gallery = () => {
   return (
-    <>
-    <UpdatingNewsBar/>
-    <Navbar/>
     <div className="space-y-10">
       <div
         className="relative w-screen h-[100vh] flex justify-center items-center pt-[10px] bg-cover bg-center"
@@ -112,8 +109,6 @@ const Gallery = () => {
         </div>
       ))}
     </div>
-    <Footer/>
-    </>
   );
 };
 

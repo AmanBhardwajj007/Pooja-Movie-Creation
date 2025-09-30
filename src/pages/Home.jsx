@@ -1,10 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import UpdatingNewsBar from '../components/UpdatingNewsBar'
 import Slider from '../components/Slider'
 import ShowReel from '../components/ShowReel'
 import AboutusSec from '../components/AboutusSec'
-import Footer from '../components/Footer'
 import Services from '../components/Services'
 import MiniSlider from '../components/MiniSlider'
 import MapComp from '../components/MapComp'
@@ -31,8 +28,6 @@ import TestimonialSlider from '../components/TestimonialCard'
 const Home = () => {
   return (
     <div className='w-full h-auto'>
-      <UpdatingNewsBar/>
-      <Navbar/>
       <Slider/>
       <ShowReel/>
       <AboutusSec/>
@@ -63,7 +58,6 @@ const Home = () => {
         <ContactusForm/>
         <MapComp/>
       </div>
-      <Footer/>
     </div>
   )
 }

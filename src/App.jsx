@@ -9,10 +9,15 @@ import CelebrityEndorsement from './pages/CelebrityEndorsement'
 import Packages from './pages/Packages'
 import HotSellingPack from './pages/HotSellingPack'
 import GoToTop from './components/GoToTop'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import UpdatingNewsBar from './components/UpdatingNewsBar'
 
 const App = () => {
   return (
     <>
+      <UpdatingNewsBar />
+      <Navbar />
       <GoToTop/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -24,6 +29,7 @@ const App = () => {
         <Route path='/hotSellingPackages' element={<HotSellingPack/>} />
         <Route path='/contactus' element={<Contact/>} />
       </Routes>
+      <Footer />
     </>
   )
 }

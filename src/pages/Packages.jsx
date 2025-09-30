@@ -1,4 +1,6 @@
 import React from "react";
+import bannerHotDealImg from '../images/hotDeal.png'
+import bannerHotDealImg2 from '../images/hotDeal2.png'
 
 const plans = [
   {
@@ -51,14 +53,12 @@ const plans = [
 const PackagesCards = () => {
   return (
     <div className="w-full bg-[#232526]">
-      <div className="relative flex justify-center items-center">
-        <h1 className="absolute z-20 text-white pageHeading">Hot Deal</h1>
+      <div className="w-[100%] h-[100vh] ">
         <img
-          className="w-full h-[100vh] bg-center bg-cover"
-          src={bgImg}
+          className="w-full h-[100vh] object-center object-cover"
+          src={bannerHotDealImg2}
           alt="About Banner"
         />
-        <div className="absolute z-10 inset-0 bg-black/40"></div>
       </div>
 
       <div className="text-white py-12 px-4 sm:px-6 lg:px-8">

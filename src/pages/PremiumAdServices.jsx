@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from '../images/services/serBanBG.jpg';
+import bgImg from '../images/services/serBanBG2.jpg';
 import i1 from "../images/services/1.jpeg";
 import i11 from "../images/services/1_(1).jpeg";
 import i2 from "../images/services/2.jpeg";

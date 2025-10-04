@@ -2,7 +2,7 @@ import React from 'react'
 
 const HotSellingPack = () => {
   return (
-    <div>
+    <div className='text-white'>
       <h1>Hot selling Packages</h1>
     </div>
   )
